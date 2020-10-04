@@ -1,9 +1,3 @@
-function loadHeader() {
-  document.querySelector("header").innerHTML = header;
-}
-
-loadHeader();
-
 function openDeleteModal(postId) {
   openModal("deletePostModal");
   document.querySelector(".delete-confirm-msg").setAttribute("id", postId);

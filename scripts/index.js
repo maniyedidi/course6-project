@@ -1,5 +1,4 @@
-function loadHeader() {
-  document.querySelector("header").innerHTML = header;
+function createPost(){
+    // create post code will go here
+    closeModal('newPostModal')
 }
-
-loadHeader();

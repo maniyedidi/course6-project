@@ -16,7 +16,6 @@ function opeSignupCloseSignin() {
 }
 
 
-
 var header = `<div class="header">
   <div class="hr-left-container">
     <span class="heading">ScriBBler</span>
@@ -118,3 +117,9 @@ var header = `<div class="header">
   </div>
 </div>
 </div>`;
+
+function loadHeader() {
+  document.querySelector("header").innerHTML = header;
+}
+
+loadHeader();

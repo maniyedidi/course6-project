@@ -1,5 +1,6 @@
 .post-list-container {
   background-color: #ffeedd;
+  height: 100vh;
 }
 .post-list {
   display: flex;
