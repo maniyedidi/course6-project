@@ -1,6 +1,10 @@
+body{
+  margin: 0px;
+}
 .post-list-container {
   background-color: #ffeedd;
   height: 100vh;
+  margin-top: 20px;
 }
 .post-list {
   display: flex;
