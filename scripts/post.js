@@ -19,12 +19,17 @@ function likePost() {
 }
 
 function createPostComment() {
-  var node = document.createElement("div");
-  node.setAttribute("class", "comment-box");
-  var textnode = document.createTextNode(
-    document.querySelector("#postComment").value
-  );
-  node.appendChild(textnode);
-  document.getElementById("commentList").appendChild(node);
-  document.querySelector("#postComment").value = "";
+  let comment = document.querySelector("#postComment").value;
+  if (comment) {
+    var node = document.createElement("div");
+    node.setAttribute("class", "comment-box");
+    var textnode = document.createTextNode(
+      document.querySelector("#postComment").value
+    );
+    node.appendChild(textnode);
+    document.getElementById("commentList").appendChild(node);
+    document.querySelector("#postComment").value = "";
+  } else {
+    alert("please enter text in comment box");
+  }
 }
